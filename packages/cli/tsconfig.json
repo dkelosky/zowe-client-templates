@@ -1,11 +1,15 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-      "rootDir": "src",
-      "outDir": "lib",
-    },
-    "include": [
-      "src"
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
+  },
+  "include": [
+    "src"
   ],
-    "references": [{ "path": "../api" }]
-  }
+  "references": [
+    {
+      "path": "../api"
+    }
+  ]
+}
