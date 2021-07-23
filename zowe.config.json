@@ -1,126 +1,23 @@
 {
     "$schema": "./zowe.schema.json",
     "profiles": {
-        "lpar1": {
+        "sample": {
+            "type": "sample",
             "properties": {
-                "host": ""
+                "host": "localhost",
+                "user": "zowe",
+                "rejectUnauthorized": false,
+                "port": 10080,
+                "password": "zowe",
             },
-            "profiles": {
-                "zosmf": {
-                    "type": "zosmf",
-                    "properties": {
-                        "port": 443
-                    },
-                    "secure": []
-                },
-                "tso": {
-                    "type": "tso",
-                    "properties": {
-                        "account": "",
-                        "codePage": "1047",
-                        "logonProcedure": "IZUFPROC"
-                    },
-                    "secure": []
-                },
-                "ssh": {
-                    "type": "ssh",
-                    "properties": {
-                        "port": 22
-                    },
-                    "secure": []
-                },
-                "idms": {
-                    "type": "idms",
-                    "properties": {},
-                    "secure": []
-                },
-                "sysview": {
-                    "type": "sysview",
-                    "properties": {},
-                    "secure": []
-                },
-                "sysview-format": {
-                    "type": "sysview-format",
-                    "properties": {},
-                    "secure": []
-                },
-                "rse": {
-                    "type": "rse",
-                    "properties": {},
-                    "secure": []
-                },
-                "mq": {
-                    "type": "mq",
-                    "properties": {},
-                    "secure": []
-                },
-                "jclcheck": {
-                    "type": "jclcheck",
-                    "properties": {},
-                    "secure": []
-                },
-                "qwikref": {
-                    "type": "qwikref",
-                    "properties": {
-                        "port": 1689
-                    },
-                    "secure": []
-                },
-                "ebg": {
-                    "type": "ebg",
-                    "properties": {},
-                    "secure": []
-                },
-                "zftp": {
-                    "type": "zftp",
-                    "properties": {},
-                    "secure": []
-                },
-                "endevor": {
-                    "type": "endevor",
-                    "properties": {},
-                    "secure": []
-                },
-                "endevor-location": {
-                    "type": "endevor-location",
-                    "properties": {},
-                    "secure": []
-                },
-                "sample": {
-                    "type": "sample",
-                    "properties": {},
-                    "secure": []
-                }
-            }
-        },
-        "my_base": {
-            "type": "base",
-            "properties": {
-                "rejectUnauthorized": true
-            },
-            "secure": [
-                "user",
-                "password"
-            ]
+            // "secure": [
+            //     "user",
+            //     "password",
+            // ]
         }
     },
     "defaults": {
-        "zosmf": "lpar1.zosmf",
-        "tso": "lpar1.tso",
-        "ssh": "lpar1.ssh",
-        "idms": "lpar1.idms",
-        "sysview": "lpar1.sysview",
-        "sysview-format": "lpar1.sysview-format",
-        "rse": "lpar1.rse",
-        "mq": "lpar1.mq",
-        "jclcheck": "lpar1.jclcheck",
-        "qwikref": "lpar1.qwikref",
-        "ebg": "lpar1.ebg",
-        "zftp": "lpar1.zftp",
-        "endevor": "lpar1.endevor",
-        "endevor-location": "lpar1.endevor-location",
-        "sample": "lpar1.sample",
-        "base": "my_base"
+        "sample": "sample"
     },
     "plugins": []
 }
