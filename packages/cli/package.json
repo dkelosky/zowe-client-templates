@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "sample-plugin-for-zowe-cli",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -25,5 +25,8 @@
   },
   "peerDependencies": {
     "@zowe/imperative": "^4.0.0"
+  },
+  "imperative": {
+    "configurationModule": "lib/imperative.js"
   }
 }
