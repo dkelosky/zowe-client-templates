@@ -1,27 +1,21 @@
 {
   "compilerOptions": {
-    "types": [
-      "node",
-      "jest"
-    ],
-    "target": "es2015",
+    "incremental": true,
+    "target": "es2019",
     "module": "commonjs",
     "declaration": true,
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "pretty": true,
     "sourceMap": true,
-    "newLine": "lf"
+    "composite": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./packages",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "lib",
-    "node_modules",
-    "**/__mocks__/*",
-    "**/__tests__/*",
-    "**/*.spec.ts",
-    "**/*-spec.ts",
-    "**/*.test.ts"
+  "references": [
+    {
+      "path": "packages/api"
+    },
   ]
 }
