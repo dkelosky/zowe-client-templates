@@ -8,20 +8,21 @@
     "outDir": "out",
     "rootDir": "src",
     "sourceMap": true,
+    "declaration": true
     // "composite": true,
   },
-  "include": [
-    "src"
-  ],
-  "references": [
-    {
-      "path": "packages/api"
-    },
-    {
-      "path": "packages/cli"
-    },
-    {
-      "path": "packages/vsce"
-    },
-  ]
+  // "include": [
+  //   "src"
+  // ],
+  // "references": [
+  //   {
+  //     "path": "packages/api"
+  //   },
+  //   {
+  //     "path": "packages/cli"
+  //   },
+  //   {
+  //     "path": "packages/vsce"
+  //   },
+  // ]
 }

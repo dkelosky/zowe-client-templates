@@ -4,17 +4,18 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "compile": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@zowe/imperative": "^5.0.0-next.202107122104"
+  },
   "devDependencies": {
     "@types/node": "^16.4.1",
     "jest": "^27.0.6",
     "typescript": "^4.3.5"
-  },
-  "dependencies": {
-    "@zowe/imperative": "^5.0.0-next.202107122104"
   }
 }

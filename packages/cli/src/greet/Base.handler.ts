@@ -66,7 +66,7 @@ export default abstract class BaseHandler implements ICommandHandler {
         return this.mHandlerParams.response.progress;
     }
 
-    public abstract async processCmd(
+    public abstract processCmd(
         commandParameters: IHandlerParameters
     ): Promise<void>;
 }
