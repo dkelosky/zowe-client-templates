@@ -9,9 +9,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bundledDependencies": [
+    "api"
+  ],
+  "dependencies": {
+    "api": "1.0.0"
+  },
+  "files": [
+    "lib"
+  ],
   "devDependencies": {
     "@types/node": "^16.4.1",
     "jest": "^27.0.6",
     "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "@zowe/imperative": "^4.0.0"
   }
 }
