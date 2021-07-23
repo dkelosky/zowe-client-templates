@@ -1,11 +1,12 @@
 import { AbstractSession, ImperativeExpect } from "@zowe/imperative";
+import { IGreeting } from "./doc/IGreeting";
 import { SampleRestClient } from "./SampleRestClient";
 
 export class Greeting {
 
     public static readonly QUERY = "?name=";
 
-    public static async greeting(session: AbstractSession, name?: string): Promise<string> {
+    public static async greet(session: AbstractSession, name?: string): Promise<IGreeting> {
         ImperativeExpect.toNotBeNullOrUndefined(session, "Required session must be defined");
 
         let url;
@@ -15,10 +16,11 @@ export class Greeting {
             url = this.contentResource;
         }
 
-        const saveUrl = url;
-        url = url.concat(this.QUERY, name);
+        if (name) {
+            url = url.concat(this.QUERY, name);
+        }
 
-        return SampleRestClient.getExpectString(session, url);
+        return SampleRestClient.getExpectJSON<IGreeting>(session, url);
     }
 
     public static get contentResource(): string {

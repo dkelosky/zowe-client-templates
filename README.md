@@ -10,6 +10,12 @@ Sample client applications for:
 
 `npm` version `7.20+` (`npm install -g npm`)
 
+## TODO
+
+* comments
+* tests
+* localization
+
 ## Building
 
 1. `git clone https://github.com/dkelosky/zowe-client-templates`

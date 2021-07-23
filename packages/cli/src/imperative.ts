@@ -3,7 +3,7 @@ import { Constants } from "./Constants";
 import { SampleSessionUtils } from "./SampleSessionUtils";
 
 const config: IImperativeConfig = {
-    commandModuleGlobs: ["greet/*.definition!(.d).*s"],
+    commandModuleGlobs: ["*/*.definition!(.d).*s"],
     pluginHealthCheck: __dirname + "/healthCheck.handler",
     pluginSummary: Constants.PLUGIN_SUMMARY,
     pluginAliases: [Constants.ALIAS],

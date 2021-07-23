@@ -15,7 +15,7 @@ import { Greeting } from "./Greeting";
 
     const session: Session = new Session(config);
 
-    const resp = await Greeting.greeting(session, "World");
+    const resp = await Greeting.greet(session, "World");
     console.log(resp);
 
 })();
