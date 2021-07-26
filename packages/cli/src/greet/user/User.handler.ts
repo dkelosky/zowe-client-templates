@@ -1,4 +1,4 @@
-import { Greeting, IGreeting } from "api";
+import { Greeting, IGreeting } from "zapi";
 import BaseHandler from "../Base.handler";
 import { IHandlerParameters } from "@zowe/imperative";
 import { inspect } from "util";

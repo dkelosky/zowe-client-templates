@@ -9,11 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bundledDependencies": [
-    "api"
-  ],
   "dependencies": {
-    "api": "1.0.0"
+    "@zowe/imperative": "^5.0.0-next.202107122104",
+    "zapi": "1.0.0"
   },
   "files": [
     "lib"
