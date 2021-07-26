@@ -5,8 +5,8 @@
     "lib": [
       "ES2019"
     ],
-    "outDir": "out",
-    "rootDir": "src",
+    // "outDir": "out",
+    // "rootDir": "src",
     "sourceMap": true,
     "composite": true,
   },
@@ -15,10 +15,10 @@
   ],
   "references": [
     {
-      "path": "packages/cli"
+      "path": "packages/api"
     },
     {
-      "path": "packages/zapi"
+      "path": "packages/cli"
     },
     {
       "path": "packages/vsce"
