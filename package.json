@@ -10,10 +10,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext ts",
-    "prettier": "prettier 'packages/**/*.ts' --write",
+    "prettier": "prettier packages/*/src/**/*.ts --write",
     "compile": "tsc -b",
     "license": "license.sh",
-    "build": "npm run compile && npm run lint && npm run test"
+    "build": "npm run license && npm run prettier && npm run lint && npm run compile && npm run test"
   },
   "keywords": [],
   "author": "",
