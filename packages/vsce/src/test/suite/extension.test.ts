@@ -1,3 +1,11 @@
+/**
+ * SPDX-License-Identifier: MIT
+ *
+ * The original repository for the VS Code Extension can be found here: https://github.com/microsoft/vscode-generator-code/tree/main/generators/app/templates/ext-command-ts
+ *
+ * The original license for the VS Code Extension can be found here: https://github.com/microsoft/vscode-generator-code/blob/main/LICENSE
+ */
+
 import * as assert from "assert";
 
 // You can import and use all API from the 'vscode' module

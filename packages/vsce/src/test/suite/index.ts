@@ -1,3 +1,11 @@
+/**
+ * SPDX-License-Identifier: MIT
+ *
+ * The original repository for the VS Code Extension can be found here: https://github.com/microsoft/vscode-generator-code/tree/main/generators/app/templates/ext-command-ts
+ *
+ * The original license for the VS Code Extension can be found here: https://github.com/microsoft/vscode-generator-code/blob/main/LICENSE
+ */
+
 import * as path from "path";
 import * as Mocha from "mocha";
 import * as glob from "glob";

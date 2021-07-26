@@ -1,7 +1,9 @@
 #!/bin/bash
 
+shopt -s globstar
+
 echo "Checking source for license files..."
-for i in packages/*/src/*.ts # or whatever other pattern...
+for i in packages/*/src/**/*.ts # or whatever other pattern...
 do
   if ! grep -q Copyright $i
   then
