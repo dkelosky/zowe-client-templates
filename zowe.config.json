@@ -5,9 +5,9 @@
             "type": "sample",
             "properties": {
                 "host": "localhost",
-                "user": "zowe",
                 "rejectUnauthorized": false,
                 "port": 10080,
+                "user": "zowe",
                 "password": "zowe",
             },
             // "secure": [

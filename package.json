@@ -9,7 +9,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "tsc -b"
+    "lint": "eslint . ext ts",
+    "prettier": "prettier 'packages/**/*.ts' --write",
+    "compile": "tsc -b",
+    "build": "npm run compile && npm run lint && npm run test"
   },
   "keywords": [],
   "author": "",

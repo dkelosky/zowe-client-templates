@@ -15,6 +15,11 @@ Sample client applications for:
 * comments
 * tests
 * localization
+* madge
+* prettier
+* .vscode
+* should workspaces each have devdependencies?
+* individual scripts for prettier & eslint??
 
 ## Building
 
